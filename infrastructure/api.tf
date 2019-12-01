@@ -1,6 +1,11 @@
 resource "aws_api_gateway_rest_api" "quarters" {
   name        = "quarters"
   description = "United States Quarters"
+
+  tags {
+    project   = "quarters"
+    terraform = "true"
+  }
 }
 
 resource "aws_api_gateway_resource" "states" {
