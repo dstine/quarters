@@ -57,6 +57,7 @@ resource "aws_route53_zone" "main" {
   delegation_set_id = "${aws_route53_delegation_set.main.id}"
 
   tags {
+    project   = "quarters"
     terraform = "true"
   }
 }
