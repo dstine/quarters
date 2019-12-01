@@ -2,6 +2,7 @@ resource "aws_cloudwatch_log_group" "quarters" {
   name = "/aws/lambda/quarters"
 
   tags {
+    project   = "quarters"
     terraform = "true"
   }
 }
@@ -74,6 +75,7 @@ resource "aws_lambda_function" "quarters" {
   filename      = "../src/lambda/lambda.zip"
 
   tags {
+    project   = "quarters"
     terraform = "true"
   }
 }

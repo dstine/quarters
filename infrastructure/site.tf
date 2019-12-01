@@ -11,6 +11,7 @@ resource "aws_s3_bucket" "root" {
   }
 
   tags {
+    project   = "quarters"
     terraform = "true"
   }
 
@@ -44,6 +45,7 @@ resource "aws_s3_bucket" "www" {
   }
 
   tags {
+    project   = "quarters"
     terraform = "true"
   }
 }

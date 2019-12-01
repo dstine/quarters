@@ -15,6 +15,7 @@ resource "aws_dynamodb_table" "united_states" {
   }
 
   tags = {
+    project   = "quarters"
     terraform = "true"
   }
 }
